@@ -1,5 +1,7 @@
 # 👩‍💻 Luiza Garcia - Portfólio Pessoal
 
+🚀 **Acesse o portfólio online:** [https://luizagso.github.io/LuizaGarcia/tailwind/index.html](https://luizagso.github.io/LuizaGarcia/tailwind/index.html)
+
 Este projeto consiste na construção do meu portfólio pessoal e profissional, focado em demonstrar minha vivência nas verticais de Gestão de Projetos (Product Owner) e Desenvolvimento Web Fullstack. O repositório possui fins extras de portfólio acadêmico, aplicando conceitualmente padrões modernos de mercado em estruturação `Web (HTML)` e interatividade de layout responsivo.
 
 ## 🛠️ O Diferencial do Repositório (Duas Abordagens)
