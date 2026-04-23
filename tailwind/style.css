@@ -1,0 +1,31 @@
+/* Globals and Variables */
+:root {
+    --transition-speed: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

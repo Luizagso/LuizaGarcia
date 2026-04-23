@@ -1,0 +1,117 @@
+/* Globals and Variables */
+:root {
+  --hero-bg-light: #eef2f5;
+  --hero-bg-dark: #121416;
+  --card-hover-translate: -8px;
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn ease 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Interactive elements */
+.hover-lift {
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(var(--card-hover-translate));
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--hero-bg-light);
+  transition: background-color var(--transition-speed);
+}
+[data-bs-theme="dark"] .hero-section {
+  background-color: var(--hero-bg-dark);
+}
+
+.hero-section img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.hero-section img:hover {
+  transform: scale(1.05) rotate(5deg);
+}
+
+/* Custom Cards */
+.timeline-card {
+  border-left: 5px solid var(--bs-primary) !important;
+  border-radius: 0.5rem;
+}
+
+/* Badges Customization */
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Theme Toggle Button */
+#themeToggle {
+  transition: all var(--transition-speed);
+}
+#themeToggle:hover {
+  transform: scale(1.1);
+}
+
+/* Theme Dark Adjustments */
+[data-bs-theme="dark"] {
+  --bs-body-color: #dee2e6;
+}
+
+[data-bs-theme="dark"] .text-muted {
+  color: #adb5bd !important;
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: #212529;
+  border: 1px solid #343a40 !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-light {
+  background-color: #343a40 !important;
+  color: #f8f9fa !important;
+  border-color: #495057 !important;
+}
+
+[data-bs-theme="dark"] .accordion-item {
+  background-color: #212529;
+  border-color: #495057 !important;
+}
+
+[data-bs-theme="dark"] .accordion-button {
+  background-color: #2b3035;
+  color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+  background-color: #0c4366;
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .accordion-button::after {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+[data-bs-theme="dark"] hr.border-secondary {
+  border-color: #495057 !important;
+}
+
+[data-bs-theme="dark"] .navbar {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}

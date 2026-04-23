@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiza Garcia - Portfólio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Luiza Garcia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item d-flex align-items-center ms-lg-3 mt-2 mt-lg-0">
+                        <button id="themeToggle" class="btn btn-outline-light btn-sm rounded-pill px-3"
+                            aria-label="Alternar tema">
+                            <i class="bi bi-moon-fill" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="hero-section text-center py-5 shadow-sm">
+        <div class="container py-5 fade-in">
+            <img src="https://ui-avatars.com/api/?name=Luiza+Garcia&size=150&background=0D8ABC&color=fff&rounded=true"
+                alt="Luiza Garcia" class="rounded-circle mb-3 border border-4 border-white shadow">
+            <h1 class="display-4 fw-bold">Luiza Garcia</h1>
+            <p class="lead mb-4">Product Owner | Desenvolvedora Web</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#contato" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">Entrar em contato</a>
+                <a href="https://linkedin.com/in/luizaosg" target="_blank"
+                    class="btn btn-outline-secondary btn-lg rounded-pill px-4 shadow-sm"><i class="bi bi-linkedin"></i>
+                    LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <!-- Sobre Mim (Atualizado) -->
+        <section id="sobre" class="mb-5 fade-in">
+            <h2 class="section-title mb-4 border-bottom pb-2"><i class="bi bi-person-badge text-primary"></i> Sobre Mim
+            </h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <p class="lead text-muted" style="text-align: justify; line-height: 1.8;">
+                        Olá! Sou a <strong>Luiza Garcia</strong>, uma profissional apaixonada por tecnologia com 5 anos
+                        de experiência na área. Minha trajetória começou no <strong>desenvolvimento web</strong>, onde
+                        atuei com muito foco por 3 anos, mas hoje me encontrei de verdade na <strong>Gestão de
+                            Produtos</strong> e <strong>Gerência de Projetos</strong>.
+                    </p>
+                    <p class="text-muted mb-0" style="text-align: justify; line-height: 1.8;">
+                        Meu grande objetivo é liderar o ciclo de vida e a execução de projetos que consigam causar
+                        impactos diretos e superarem as expectativas, sempre mantendo a transparência e o trabalho em
+                        equipe.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column gap-3">
+                        <div
+                            class="d-flex align-items-center p-3 bg-white rounded text-muted border border-secondary border-opacity-25 shadow-sm hover-lift">
+                            <i class="bi bi-bullseye fs-3 text-primary me-3"></i>
+                            <span class="fw-semibold">Priorização Estratégica</span>
+                        </div>
+                        <div
+                            class="d-flex align-items-center p-3 bg-white rounded text-muted border border-secondary border-opacity-25 shadow-sm hover-lift">
+                            <i class="bi bi-search fs-3 text-success me-3"></i>
+                            <span class="fw-semibold">Product Discovery</span>
+                        </div>
+                        <div
+                            class="d-flex align-items-center p-3 bg-white rounded text-muted border border-secondary border-opacity-25 shadow-sm hover-lift">
+                            <i class="bi bi-diagram-3 fs-3 text-info me-3"></i>
+                            <span class="fw-semibold">Metodologias Ágeis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos e Destaques -->
+        <section id="projetos" class="mb-5 fade-in">
+            <h2 class="section-title mb-4 border-bottom pb-2"><i class="bi bi-star-fill text-warning"></i> Projetos em
+                Destaque
+                <span class="fs-6 fw-normal text-muted ms-2">(Clique nos cards para detalhes e atuação)</span>
+            </h2>
+            <div class="row g-4">
+
+                <!-- Projeto TÜV -->
+                <div class="col-lg-4 col-md-6" role="button" data-bs-toggle="modal" data-bs-target="#tuvModal">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4 text-center">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex p-3 mb-3">
+                                <i class="bi bi-shield-check fs-1"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">TÜV Rheinland</h5>
+                            <span class="badge bg-primary mb-3">Product Owner</span>
+                            <p class="text-muted small mb-0">Liderança de ponta a ponta em projeto global
+                                de inspeção e certificação técnica.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto RegulaBT -->
+                <div class="col-lg-4 col-md-6" role="button" data-bs-toggle="modal" data-bs-target="#regulaBtModal">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4 text-center">
+                            <div
+                                class="bg-info bg-opacity-10 text-info text-dark rounded-circle d-inline-flex p-3 mb-3">
+                                <i class="bi bi-robot fs-1"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">RegulaBT (BTLAW)</h5>
+                            <span class="badge bg-info text-dark mb-3">Product Owner</span>
+                            <p class="text-muted small mb-0">Evolução estratégica de plataforma com forte
+                                integração de Inteligência Artificial.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Integração Estaff -->
+                <div class="col-lg-4 col-md-6" role="button" data-bs-toggle="modal" data-bs-target="#estaffModal">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4 text-center">
+                            <div
+                                class="bg-warning bg-opacity-10 text-warning text-dark rounded-circle d-inline-flex p-3 mb-3">
+                                <i class="bi bi-wallet2 fs-1"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">Estaff & Celcoin</h5>
+                            <span class="badge bg-warning text-dark mb-3">Gerente de Projetos</span>
+                            <p class="text-muted small mb-0"> Integração de serviços financeiros para gestão
+                                de carteira digital em app de freelancers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Exercite-se -->
+                <div class="col-lg-4 col-md-6" role="button" data-bs-toggle="modal" data-bs-target="#exerciteModal">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4 text-center">
+                            <div class="bg-success bg-opacity-10 text-success rounded-circle d-inline-flex p-3 mb-3">
+                                <i class="bi bi-heart-pulse fs-1"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">Exercite-se Solidário</h5>
+                            <span class="badge bg-success mb-3">Organização</span>
+                            <p class="text-muted small mb-0">Organização de evento comunitário com foco em
+                                impacto social e engajamento local.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto CompWeek -->
+                <div class="col-lg-4 col-md-6" role="button" data-bs-toggle="modal" data-bs-target="#compWeekModal">
+                    <div class="card h-100 shadow-sm border-0 hover-lift">
+                        <div class="card-body p-4 text-center">
+                            <div class="bg-danger bg-opacity-10 text-danger rounded-circle d-inline-flex p-3 mb-3">
+                                <i class="bi bi-mic fs-1"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">CompWeek 2024</h5>
+                            <span class="badge bg-danger mb-3">Contato Institucional</span>
+                            <p class="text-muted small mb-0">Articulação estratégica com empresas e
+                                palestrantes para evento de tecnologia.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Formação Acadêmica -->
+        <section id="formacao" class="mb-5 fade-in">
+            <h2 class="section-title mb-4 border-bottom pb-2"><i class="bi bi-mortarboard text-primary"></i> Formação
+                Acadêmica</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100 hover-lift timeline-card">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Bacharelado em Sistemas de Informação</h5>
+                            <h6 class="card-subtitle mb-3 text-muted"><i class="bi bi-building"></i> Universidade
+                                Federal de Lavras - UFLA</h6>
+                            <span class="badge bg-light text-dark border"><i class="bi bi-calendar3"></i> Outubro de
+                                2022 - Junho de 2027</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100 hover-lift timeline-card">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Técnico em Informática Integrado ao Ensino Médio</h5>
+                            <h6 class="card-subtitle mb-3 text-muted"><i class="bi bi-building"></i> Instituto Federal
+                                de Minas Gerais - IFMG (Campus Formiga)</h6>
+                            <span class="badge bg-light text-dark border"><i class="bi bi-calendar3"></i> Março de 2017
+                                - Abril de 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiência Profissional -->
+        <section id="experiencia" class="mb-5 fade-in">
+            <h2 class="section-title mb-4 border-bottom pb-2"><i class="bi bi-briefcase text-primary"></i> Experiência
+                Profissional</h2>
+            <div class="accordion shadow-sm rounded" id="accordionEx">
+
+                <!-- exp 1 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne">
+                            BLUE PROJECTS - Product Owner
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionEx">
+                        <div class="accordion-body">
+                            <span class="badge bg-primary mb-3"><i class="bi bi-calendar3"></i> 04/2025 até
+                                Atualmente</span>
+                            <ul class="list-unstyled text-muted mt-2">
+                                <li class="mb-2"><i class="bi bi-briefcase-fill text-primary me-2"></i><strong>Gestão
+                                        Híbrida:</strong> Gerenciamento simultâneo de múltiplos produtos para clientes
+                                    como TÜV Rheinland, Estaff e BTLAW.</li>
+                                <li class="mb-2"><i class="bi bi-cpu-fill text-primary me-2"></i><strong>Projetos
+                                        Complexos:</strong> Atuação em sistemas de grande porte com integrações robustas
+                                    (IA e Pagamentos).</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb-fill text-primary me-2"></i><strong>Product
+                                        Discovery:</strong> Condução de dinâmicas (Lean Inception), alinhamentos diários
+                                    e refinamento contínuo.</li>
+                                <li class="mb-2"><i class="bi bi-list-task text-primary me-2"></i><strong>Metodologia
+                                        Ágil:</strong> Planejamento via Scrum, condução de Sprints, e backlog no JIRA
+                                    com histórias de usuário.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- exp 2 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo">
+                            COMP JÚNIOR - Vários Cargos
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionEx">
+                        <div class="accordion-body">
+                            <div class="mb-4">
+                                <h6 class="fw-bold fs-6 text-primary">Product Owner</h6>
+                                <span class="badge bg-secondary mb-2"><i class="bi bi-calendar3"></i> 06/2024 até
+                                    04/2025</span>
+                                <ul class="list-unstyled text-muted small mt-2">
+                                    <li class="mb-2"><i
+                                            class="bi bi-file-earmark-text text-primary me-2"></i><strong>Requisitos &
+                                            Documentação:</strong> Levantamento refinado e escrita intensiva de casos de
+                                        uso/requisitos técnicos.</li>
+                                    <li class="mb-2"><i class="bi bi-kanban text-primary me-2"></i><strong>Gestão
+                                            :</strong> Priorização inteligente do Backlog e roadmap no projeto
+                                        "Vistorias Imóveis".</li>
+                                    <li class="mb-2"><i class="bi bi-arrow-repeat text-primary me-2"></i><strong>Scrum
+                                            :</strong> Orquestração de rituais ágeis e gerenciamento impecável do
+                                        time via GitHub Projects.</li>
+                                </ul>
+                            </div>
+
+                            <hr class="text-muted">
+                            <div class="mb-4">
+                                <h6 class="fw-bold fs-6 text-primary">Assessora de Gestão de Pessoas</h6>
+                                <span class="badge bg-secondary mb-2"><i class="bi bi-calendar3"></i> 06/2024 até
+                                    04/2025</span>
+                                <p class="text-muted small" style="text-align: justify;">Realização de 1:1 com membros
+                                    da empresa e promoção de rituais de cultura, como gamificação e reconhecimento;
+                                    Coordenação de eventos corporativos, incluindo CompWeek e Exercite-se Solidário.</p>
+                            </div>
+
+                            <hr class="text-muted">
+                            <div>
+                                <h6 class="fw-bold fs-6 text-primary">Trainee</h6>
+                                <span class="badge bg-secondary mb-2"><i class="bi bi-calendar3"></i> 04/2024 até
+                                    06/2024</span>
+                                <p class="text-muted small" style="text-align: justify;">Participação em reuniões com
+                                    clientes para coleta e documentação de requisitos; Escrita de casos de uso,
+                                    priorização de tarefas e utilização do Jira para gestão de backlog e atividades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- exp 3 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree">
+                            SAMBATECH - Desenvolvedora Web
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionEx">
+                        <div class="accordion-body">
+                            <span class="badge bg-secondary mb-3"><i class="bi bi-calendar3"></i> 01/2022 até
+                                02/2024</span>
+                            <ul class="list-unstyled text-muted mt-2">
+                                <li class="mb-2"><i
+                                        class="bi bi-code-square text-primary me-2"></i><strong>Desenvolvimento
+                                        Fullstack:</strong> Manutenção em robustas plataformas de vídeo (Symfony, Java e
+                                    Javascript).</li>
+                                <li class="mb-2"><i class="bi bi-building text-primary me-2"></i><strong>Clientes
+                                        :</strong> Participação no Samba Vídeos e projetos enormes (B3, Grupo
+                                    Petrópolis, Porto Seguro).</li>
+                                <li class="mb-2"><i class="bi bi-cloud text-primary me-2"></i><strong>Infra /
+                                        Cloud:</strong> Atuação profunda em infraestrutura gerenciando containers e
+                                    servidores com Docker e AWS.</li>
+                                <li class="mb-2"><i class="bi bi-journal-check text-primary me-2"></i><strong>Product
+                                        Sense:</strong> Abertura de cards, análise e documentação de requisitos lidando
+                                    diretamente com clientes (Jira, Miro, Monday).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- exp 4 -->
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour">
+                            TWT INFO - Desenvolvedora Web
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionEx">
+                        <div class="accordion-body">
+                            <span class="badge bg-secondary mb-3"><i class="bi bi-calendar3"></i> 03/2021 até
+                                01/2022</span>
+                            <p class="text-muted" style="text-align: justify;">Desenvolvimento e manutenção de
+                                funcionalidades em software jurídico utilizando Laravel, JavaScript e React;
+                                Identificação e correção de erros, realizando registro e documentação das tarefas no
+                                Trello; Colaboração em equipe e aplicação de SCRUM como metodologia ágil.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Habilidades Técnicas -->
+        <section id="habilidades" class="mb-5 fade-in">
+            <h2 class="section-title mb-4 border-bottom pb-2"><i class="bi bi-tools text-primary"></i> Habilidades
+                Técnicas</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 hover-lift text-center py-3">
+                        <div class="card-body">
+                            <div class="display-6 text-primary mb-3"><i class="bi bi-search"></i></div>
+                            <h6 class="card-title fw-bold">Análise de Requisitos</h6>
+                            <p class="card-text small text-muted">Levantamento, documentação, análise funcional e não
+                                funcional, modelagem de dados e processos (UML).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 hover-lift text-center py-3">
+                        <div class="card-body">
+                            <div class="display-6 text-primary mb-3"><i class="bi bi-kanban"></i></div>
+                            <h6 class="card-title fw-bold">Gestão de Produtos</h6>
+                            <p class="card-text small text-muted">Definição de backlog, planejamento/sprints, histórias
+                                de usuário, condução de reuniões com time e clientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 hover-lift text-center py-3">
+                        <div class="card-body">
+                            <div class="display-6 text-primary mb-3"><i class="bi bi-lightning-charge"></i></div>
+                            <h6 class="card-title fw-bold">Metodologias Ágeis</h6>
+                            <p class="card-text small text-muted">Scrum, Kanban e Lean Inception.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 hover-lift text-center py-3">
+                        <div class="card-body">
+                            <div class="display-6 text-primary mb-3"><i class="bi bi-boxes"></i></div>
+                            <h6 class="card-title fw-bold">Ferramentas</h6>
+                            <div class="d-flex flex-wrap justify-content-center gap-1 mt-3">
+                                <span class="badge bg-secondary px-3 py-2">Jira</span>
+                                <span class="badge bg-secondary px-3 py-2">Miro</span>
+                                <span class="badge bg-secondary px-3 py-2">Monday</span>
+                                <span class="badge bg-secondary px-3 py-2">Trello</span>
+                                <span class="badge bg-secondary px-3 py-2">Figma</span>
+                                <span class="badge bg-secondary px-3 py-2">PowerBI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 hover-lift text-center py-3">
+                        <div class="card-body">
+                            <div class="display-6 text-primary mb-3"><i class="bi bi-code-slash"></i></div>
+                            <h6 class="card-title fw-bold">Desenvolvimento</h6>
+                            <div class="d-flex flex-wrap justify-content-center gap-1 mt-3">
+                                <span class="badge text-bg-info px-3 py-2 text-white">HTML/CSS</span>
+                                <span class="badge text-bg-warning px-3 py-2 text-white">JavaScript</span>
+                                <span class="badge text-bg-danger px-3 py-2">Laravel/PHP</span>
+                                <span class="badge text-bg-primary px-3 py-2">Java</span>
+                                <span class="badge text-bg-dark px-3 py-2">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 hover-lift text-center py-3">
+                        <div class="card-body">
+                            <div class="display-6 text-primary mb-3"><i class="bi bi-database"></i></div>
+                            <h6 class="card-title fw-bold">Banco de Dados</h6>
+                            <div class="d-flex flex-wrap justify-content-center gap-1 mt-3">
+                                <span class="badge bg-success px-3 py-2">SQL</span>
+                                <span class="badge bg-success px-3 py-2">MySQL</span>
+                                <span class="badge bg-success px-3 py-2">SQL Server</span>
+                                <span class="badge bg-success px-3 py-2">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modais de Projetos -->
+        <!-- Modal TÜV -->
+        <div class="modal fade" id="tuvModal" tabindex="-1" aria-labelledby="tuvModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header bg-primary bg-opacity-10">
+                        <h5 class="modal-title text-primary fw-bold" id="tuvModalLabel"><i
+                                class="bi bi-shield-check me-2"></i>TÜV Rheinland</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-muted" style="text-align: justify">
+                        <p>A <strong>TÜV Rheinland</strong> é líder global em
+                            serviços técnicos, segurança e certificação, com mais de 150 anos de atuação, atuando de
+                            forma
+                            independente na validação de produtos, sistemas e processos.</p>
+                        <p class="mb-0"><strong>Meu papel:</strong> Atuei na condução completa
+                            do projeto, desde o levantamento detalhado de requisitos com o cliente até a entrega final
+                            da
+                            solução. Fui responsável pela priorização do backlog, organização do escopo técnico e gestão
+                            de
+                            equipe.
+                            Implementei adaptações na metodologia Scrum para aumentar a produtividade e garantir
+                            alinhamentos eficientes entre todas as frentes envolvidas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal RegulaBT -->
+        <div class="modal fade" id="regulaBtModal" tabindex="-1" aria-labelledby="regulaBtModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header bg-info bg-opacity-10">
+                        <h5 class="modal-title text-dark fw-bold" id="regulaBtModalLabel"><i
+                                class="bi bi-robot text-info me-2"></i>RegulaBT (BTLAW)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-muted" style="text-align: justify">
+                        <p>Neste projeto estratégico e de grande escopo da <strong>BTLAW</strong>, o time construiu uma
+                            nova
+                            versão corporativa da plataforma pré-existente visando elevá-la, tornando-a
+                            consideravelmente
+                            mais estruturada em performance, e aderindo massivas funcionalidades analíticas e nativas na
+                            nuvem.</p>
+                        <p class="mb-0"><strong>Meu papel:</strong> Atuei diretamente
+                            com o cliente e com a equipe na condução do projeto durante todo o processo de reconstrução
+                            da
+                            plataforma.
+                            Um dos principais desafios foi a adoção intensiva de Inteligência Artificial no
+                            desenvolvimento.
+                            Meu papel foi garantir que o uso da IA não comprometesse a arquitetura, a qualidade e a
+                            sustentabilidade do projeto, além de estimular o crescimento técnico da equipe diante dessa
+                            nova
+                            abordagem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Estaff -->
+        <div class="modal fade" id="estaffModal" tabindex="-1" aria-labelledby="estaffModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header bg-warning bg-opacity-10">
+                        <h5 class="modal-title text-dark fw-bold" id="estaffModalLabel"><i
+                                class="bi bi-wallet2 text-warning me-2"></i>Estaff & Celcoin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-muted" style="text-align: justify">
+                        <p>Projeto de integração entre o aplicativo <strong>Estaff</strong> e a
+                            <strong>Celcoin</strong>, permitindo a
+                            unificação de
+                            funcionalidades financeiras como controle de saldo, recargas e gestão de carteira digital
+                            diretamente no app.
+                        </p>
+                        <p class="mb-0"><strong>Meu papel:</strong> Atuei como <em>Gestora de Projetos</em> orquestrando
+                            esta equipe. O grande desafio dessa integração vital de serviços financeiros foi o grau de
+                            cautela com falhas financeiras e vazamentos, logo, meu destaque pessoal foi mapear
+                            minuciosamente cenários e blindar preventivamente todos os pontos de risco da regra de
+                            negócio crítica para proteger cliente e usuários finais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Exercite-se -->
+        <div class="modal fade" id="exerciteModal" tabindex="-1" aria-labelledby="exerciteModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header bg-success bg-opacity-10">
+                        <h5 class="modal-title text-success fw-bold" id="exerciteModalLabel"><i
+                                class="bi bi-heart-pulse me-2"></i>Exercite-se Solidário</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-muted" style="text-align: justify">
+                        <p>Eventos fomentam grande união humanitária quando possuem propósito de base comunitária.
+                            Promovida
+                            via Comp Júnior, a prova de rua esportiva beneficente <strong>Exercite-se Solidário</strong>
+                            teve a incrível missão de engajar a saúde física com a solidariedade, instigando o movimento
+                            de
+                            captar doações por volta de todo o ecossistema e ambiente universitário e
+                            populacional de Lavras.</p>
+                        <p class="mb-0"><strong>Meu papel:</strong> Atuei na estruturação
+                            completa do evento, desde o planejamento logístico até a execução. Fui responsável por
+                            organizar
+                            recursos, alinhar equipes e garantir a entrega do evento dentro das limitações de orçamento,
+                            promovendo alto engajamento e impacto social.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal CompWeek -->
+        <div class="modal fade" id="compWeekModal" tabindex="-1" aria-labelledby="compWeekModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header bg-danger bg-opacity-10">
+                        <h5 class="modal-title text-danger fw-bold" id="compWeekModalLabel"><i
+                                class="bi bi-mic me-2"></i>CompWeek 2024</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-muted" style="text-align: justify">
+                        <p>A <strong>CompWeek</strong> é um evento de grande visibilidade que desenvolve e capacita
+                            talentos. Conecta
+                            estudantes, empresas e profissionais do mercado por meio de palestras, workshops e
+                            networking.</p>
+                        <p class="mb-0"><strong>Meu papel:</strong> Fui responsável pelo contato direto com palestrantes
+                            e empresas parceiras, conduzindo o relacionamento antes, durante e após o evento.
+                            Atuei garantindo alinhamento entre todas as partes envolvidas, organização da agenda e
+                            acompanhamento contínuo para assegurar a qualidade da experiência e o sucesso do evento..
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Contato / Footer -->
+    <footer id="contato" class="bg-dark text-light py-5 mt-5">
+        <div class="container text-center">
+            <h3 class="mb-4 font-weight-bold">Contato</h3>
+            <div class="row justify-content-center mb-4 g-4 mt-3">
+                <div class="col-md-3 hover-lift">
+                    <i class="bi bi-geo-alt-fill display-5 d-block mb-3 text-primary"></i>
+                    <span class="fs-5">Lavras - MG</span>
+                </div>
+                <div class="col-md-3 hover-lift">
+                    <i class="bi bi-envelope-fill display-5 d-block mb-3 text-primary"></i>
+                    <a href="mailto:luizagarcia.osg@gmail.com"
+                        class="text-light text-decoration-none fs-5">luizagarcia.osg@gmail.com</a>
+                </div>
+                <div class="col-md-3 hover-lift">
+                    <i class="bi bi-telephone-fill display-5 d-block mb-3 text-primary"></i>
+                    <span class="fs-5">(35) 99117-8804</span>
+                </div>
+                <div class="col-md-3 hover-lift">
+                    <i class="bi bi-linkedin display-5 d-block mb-3 text-primary"></i>
+                    <a href="https://linkedin.com/in/luizaosg" target="_blank"
+                        class="text-light text-decoration-none fs-5">/in/luizaosg</a>
+                </div>
+            </div>
+            <hr class="border-secondary mt-5 mb-4">
+            <p class="mb-0 text-secondary">&copy; 2026 Luiza Garcia. Todos os direitos reservados. Projeto Acadêmico.
+            </p>
+            <p class="text-muted small">Versão construída com <strong>Bootstrap 5</strong>.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

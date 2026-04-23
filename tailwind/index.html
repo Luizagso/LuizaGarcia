@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiza Garcia - Portfólio (Tailwind)</title>
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb', // blue-600
+                        secondary: '#475569', // slate-600
+                        darkbg: '#0f172a', // slate-900
+                        darkcard: '#1e293b' // slate-800
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    class="bg-gray-50 text-slate-800 dark:bg-darkbg dark:text-slate-300 transition-colors duration-300 font-['Inter']">
+
+    <!-- Navbar -->
+    <nav
+        class="fixed top-0 w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-sm border-b border-gray-100 dark:border-slate-800 z-40 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#"
+                        class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500 tracking-tight">Luiza
+                        Garcia.</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-6">
+                        <a href="#sobre"
+                            class="hover:text-primary dark:hover:text-blue-400 font-medium transition-colors">Sobre</a>
+                        <a href="#projetos"
+                            class="hover:text-primary dark:hover:text-blue-400 font-medium transition-colors">Projetos</a>
+                        <a href="#experiencia"
+                            class="hover:text-primary dark:hover:text-blue-400 font-medium transition-colors">Experiência</a>
+                        <a href="#habilidades"
+                            class="hover:text-primary dark:hover:text-blue-400 font-medium transition-colors">Habilidades</a>
+                        <a href="#contato"
+                            class="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors shadow-sm">Contato</a>
+                        <button id="themeToggle"
+                            class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors focus:outline-none ml-2">
+                            <i class="fas fa-moon text-slate-600 dark:text-slate-300 text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Hero Section -->
+        <section class="py-16 text-center fade-in">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
+                Luiza Garcia <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">Gestora de
+                    Projetos</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-500 dark:text-slate-400 mb-8 max-w-3xl mx-auto font-light">
+                Combinando visão estratégica e expertise técnica para coordenar entregas incríveis.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#projetos"
+                    class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-blue-500/30 transition-all hover:-translate-y-1">
+                    <i class="fas fa-rocket mr-2"></i> Ver Projetos
+                </a>
+                <a href="#contato"
+                    class="bg-white dark:bg-darkcard hover:bg-gray-50 dark:hover:bg-slate-700 border border-gray-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 px-6 py-3 rounded-lg font-semibold shadow-sm transition-all hover:-translate-y-1">
+                    <i class="fas fa-paper-plane mr-2 text-primary"></i> Contato
+                </a>
+            </div>
+        </section>
+
+        <!-- Sobre Mim (Atualizado) -->
+        <section id="sobre" class="py-12 fade-in">
+            <h2
+                class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-gray-200 dark:border-slate-700 pb-2 mb-8 inline-block">
+                <i class="fas fa-user-tag text-primary mr-2"></i> Sobre Mim
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7">
+                    <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-6 text-justify">
+                        Olá! Sou a <strong>Luiza Garcia</strong>, uma profissional apaixonada por tecnologia com 5 anos
+                        de experiência na área. Minha trajetória começou no <strong
+                            class="text-primary dark:text-blue-400">desenvolvimento web</strong>, onde atuei com muito
+                        foco por 3 anos, mas hoje me encontrei de verdade na <strong
+                            class="text-primary dark:text-blue-400">Gestão de Produtos</strong> e <strong
+                            class="text-primary dark:text-blue-400">Gerência de Projetos</strong>.
+                    </p>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+                        Meu grande objetivo é liderar o ciclo de vida e a execução de projetos que consigam causar
+                        impactos diretos e superarem as expectativas, sempre mantendo a transparência e o trabalho em
+                        equipe.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-5 space-y-4">
+                    <div
+                        class="bg-white dark:bg-darkcard rounded-xl p-4 shadow-sm border border-gray-100 dark:border-slate-700 flex items-center hover:-translate-y-1 transition-transform duration-300">
+                        <i class="fas fa-bullseye text-3xl text-primary mr-4"></i>
+                        <span class="text-lg font-semibold text-slate-700 dark:text-slate-200">Priorização
+                            Estratégica</span>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-darkcard rounded-xl p-4 shadow-sm border border-gray-100 dark:border-slate-700 flex items-center hover:-translate-y-1 transition-transform duration-300">
+                        <i class="fas fa-search text-3xl text-green-500 mr-4"></i>
+                        <span class="text-lg font-semibold text-slate-700 dark:text-slate-200">Product Discovery</span>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-darkcard rounded-xl p-4 shadow-sm border border-gray-100 dark:border-slate-700 flex items-center hover:-translate-y-1 transition-transform duration-300">
+                        <i class="fas fa-project-diagram text-3xl text-purple-500 mr-4"></i>
+                        <span class="text-lg font-semibold text-slate-700 dark:text-slate-200">Metodologias Ágeis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos e Destaques -->
+        <section id="projetos" class="py-12 fade-in">
+            <h2
+                class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-gray-200 dark:border-slate-700 pb-2 mb-8 inline-flex items-end">
+                <i class="fas fa-star text-yellow-500 mr-3 mb-1"></i> Projetos em Destaque
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Projeto TÜV -->
+                <div class="bg-white dark:bg-darkcard rounded-2xl shadow-md border border-gray-100 dark:border-slate-700 p-6 text-center hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+                    data-modal-target="tuvModal">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 mb-4">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">TÜV Rheinland</h3>
+                    <span
+                        class="inline-block bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-xs px-3 py-1 rounded-full font-semibold mb-3">Product
+                        Owner</span>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Liderança de ponta a ponta em projeto global
+                        de inspeção e certificação técnica.</p>
+                </div>
+
+                <!-- Projeto RegulaBT -->
+                <div class="bg-white dark:bg-darkcard rounded-2xl shadow-md border border-gray-100 dark:border-slate-700 p-6 text-center hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+                    data-modal-target="regulaBtModal">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-50 text-cyan-600 dark:bg-cyan-900/30 dark:text-cyan-400 mb-4">
+                        <i class="fas fa-robot text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">RegulaBT (BTLAW)</h3>
+                    <span
+                        class="inline-block bg-cyan-100 text-cyan-800 dark:bg-cyan-900/50 dark:text-cyan-300 text-xs px-3 py-1 rounded-full font-semibold mb-3">Product
+                        Owner</span>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Evolução estratégica de plataforma com forte
+                        integração de Inteligência Artificial.</p>
+                </div>
+
+                <!-- Projeto Integração Estaff -->
+                <div class="bg-white dark:bg-darkcard rounded-2xl shadow-md border border-gray-100 dark:border-slate-700 p-6 text-center hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+                    data-modal-target="estaffModal">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-amber-50 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400 mb-4">
+                        <i class="fas fa-wallet text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Estaff & Celcoin</h3>
+                    <span
+                        class="inline-block bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300 text-xs px-3 py-1 rounded-full font-semibold mb-3">Gerente
+                        de Projetos</span>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Integração de serviços financeiros para gestão
+                        de carteira digital em app de freelancers.</p>
+                </div>
+
+                <!-- Projeto Exercite-se -->
+                <div class="bg-white dark:bg-darkcard rounded-2xl shadow-md border border-gray-100 dark:border-slate-700 p-6 text-center hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+                    data-modal-target="exerciteModal">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-50 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400 mb-4">
+                        <i class="fas fa-running text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Exercite-se Solidário</h3>
+                    <span
+                        class="inline-block bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300 text-xs px-3 py-1 rounded-full font-semibold mb-3">Organização</span>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Organização de evento comunitário com foco em
+                        impacto social e engajamento local.</p>
+                </div>
+
+                <!-- Projeto CompWeek -->
+                <div class="bg-white dark:bg-darkcard rounded-2xl shadow-md border border-gray-100 dark:border-slate-700 p-6 text-center hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+                    data-modal-target="compWeekModal">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-rose-50 text-rose-600 dark:bg-rose-900/30 dark:text-rose-400 mb-4">
+                        <i class="fas fa-microphone text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">CompWeek 2024</h3>
+                    <span
+                        class="inline-block bg-rose-100 text-rose-800 dark:bg-rose-900/50 dark:text-rose-300 text-xs px-3 py-1 rounded-full font-semibold mb-3">Contato
+                        Institucional</span>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Articulação estratégica com empresas e
+                        palestrantes para evento de tecnologia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formação Acadêmica -->
+        <section id="formacao" class="py-12 fade-in">
+            <h2
+                class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-gray-200 dark:border-slate-700 pb-2 mb-8 inline-block">
+                <i class="fas fa-graduation-cap text-primary mr-2"></i> Formação Acadêmica
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Uni -->
+                <div class="bg-white dark:bg-darkcard rounded-xl shadow-sm border-l-4 border-primary p-6">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Bacharelado em Sistemas de
+                        Informação</h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-3"><i
+                            class="fas fa-university mr-2"></i>Universidade Federal de Lavras - UFLA</p>
+                    <span
+                        class="inline-block bg-gray-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300 rounded px-2 py-1 text-xs"><i
+                            class="far fa-calendar-alt mr-1"></i> Outubro de 2022 - Junho de 2027</span>
+                </div>
+                <!-- Tec -->
+                <div class="bg-white dark:bg-darkcard rounded-xl shadow-sm border-l-4 border-primary p-6">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Técnico em Informática Integrado
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-3"><i class="fas fa-university mr-2"></i>IFMG
+                        (Campus Formiga)</p>
+                    <span
+                        class="inline-block bg-gray-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300 rounded px-2 py-1 text-xs"><i
+                            class="far fa-calendar-alt mr-1"></i> Março de 2017 - Abril de 2021</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiência Profissional -->
+        <section id="experiencia" class="py-12 fade-in">
+            <h2
+                class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-gray-200 dark:border-slate-700 pb-2 mb-8 inline-block">
+                <i class="fas fa-briefcase text-primary mr-2"></i> Experiência Profissional
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Exp 1 -->
+                <div
+                    class="bg-white dark:bg-darkcard rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 hover:-translate-y-1 transition-transform">
+                    <div class="sm:flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">BLUE PROJECTS <span
+                                    class="text-primary font-medium ml-2">- Product Owner</span></h3>
+                            <span
+                                class="inline-block bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 text-sm mt-2 px-2 py-1 rounded"><i
+                                    class="far fa-calendar-alt mr-1"></i> 04/2025 até Atualmente</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mt-4 text-slate-600 dark:text-slate-400">
+                        <li class="flex items-start"><i
+                                class="fas fa-briefcase text-primary mt-1 mr-3"></i><span><strong
+                                    class="text-slate-800 dark:text-slate-200">Gestão Híbrida:</strong> Gerenciamento
+                                simultâneo de múltiplos produtos corporativos (TÜV, Estaff, BTLAW).</span></li>
+                        <li class="flex items-start"><i
+                                class="fas fa-microchip text-primary mt-1 mr-3"></i><span><strong
+                                    class="text-slate-800 dark:text-slate-200">Projetos Complexos:</strong> Atuação em
+                                sistemas de grande porte com integrações robustas (IA e métodos de pagamento).</span>
+                        </li>
+                        <li class="flex items-start"><i
+                                class="fas fa-lightbulb text-primary mt-1 mr-3"></i><span><strong
+                                    class="text-slate-800 dark:text-slate-200">Product Discovery:</strong> Condução de
+                                dinâmicas vitais de descoberta (Lean Inception), alinhamentos diários e
+                                refinamento.</span></li>
+                        <li class="flex items-start"><i class="fas fa-tasks text-primary mt-1 mr-3"></i><span><strong
+                                    class="text-slate-800 dark:text-slate-200">Metodologia Ágil:</strong> Planejamento
+                                via Scrum, condução direta de Sprints e liderança via JIRA.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Exp 2 -->
+                <div
+                    class="bg-white dark:bg-darkcard rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 hover:-translate-y-1 transition-transform">
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6">COMP JÚNIOR</h3>
+
+                    <div class="ml-4 border-l-2 border-gray-200 dark:border-slate-700 pl-6 relative">
+                        <!-- Sub1 -->
+                        <div class="mb-8">
+                            <span class="absolute w-3 h-3 bg-primary rounded-full -left-[7px] mt-1.5 opacity-80"></span>
+                            <h4 class="text-lg font-bold text-primary">Product Owner</h4>
+                            <span
+                                class="inline-block bg-gray-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300 text-xs my-2 px-2 py-1 rounded"><i
+                                    class="far fa-calendar-alt mr-1"></i> 06/2024 até 04/2025</span>
+                            <ul class="space-y-2 mt-2 text-sm text-slate-600 dark:text-slate-400">
+                                <li class="flex items-start"><i
+                                        class="fas fa-file-signature text-primary mt-1 mr-2 opacity-70"></i><span
+                                        class="w-full"><strong>Requisitos & Documentação:</strong> Levantamento refinado
+                                        com criação intensiva de casos de uso funcionais/técnicos.</span></li>
+                                <li class="flex items-start"><i
+                                        class="fas fa-project-diagram text-primary mt-1 mr-2 opacity-70"></i><span
+                                        class="w-full"><strong>Gestão:</strong> Priorização inteligente do
+                                        backlog e idealização de roadmap corporativo no projeto ("Vistorias
+                                        Imóveis").</span></li>
+                                <li class="flex items-start"><i
+                                        class="fas fa-sync-alt text-primary mt-1 mr-2 opacity-70"></i><span
+                                        class="w-full"><strong>Scrum:</strong> Orquestração de rituais ágeis
+                                        (Plannings, Dailys, Reviews) e monitoria impecável via GitHub Projects.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Sub2 -->
+                        <div class="mb-8">
+                            <span class="absolute w-3 h-3 bg-primary rounded-full -left-[7px] mt-1.5 opacity-80"></span>
+                            <h4 class="text-lg font-bold text-primary">Assessora de Gestão de Pessoas</h4>
+                            <span
+                                class="inline-block bg-gray-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300 text-xs my-2 px-2 py-1 rounded"><i
+                                    class="far fa-calendar-alt mr-1"></i> 06/2024 até 04/2025</span>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Realização de 1:1 e promoção
+                                fundamental de rituais de cultura, tais como gamificação e reconhecimento estratégico.
+                                Coordenação direta de eventos corporativos primordiais (CompWeek e Exercite-se
+                                Solidário).</p>
+                        </div>
+
+                        <!-- Sub3 -->
+                        <div>
+                            <span class="absolute w-3 h-3 bg-primary rounded-full -left-[7px] mt-1.5 opacity-80"></span>
+                            <h4 class="text-lg font-bold text-primary">Trainee</h4>
+                            <span
+                                class="inline-block bg-gray-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300 text-xs my-2 px-2 py-1 rounded"><i
+                                    class="far fa-calendar-alt mr-1"></i> 04/2024 até 06/2024</span>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Contato primário técnico voltado
+                                a participar de reuniões com clientes identificando e extraindo requisitos valiosos,
+                                elaborando seus casos de uso.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp 3 -->
+                <div
+                    class="bg-white dark:bg-darkcard rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 hover:-translate-y-1 transition-transform">
+                    <div class="sm:flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">SAMBATECH <span
+                                    class="text-primary font-medium ml-2">- Desenvolvedora Web</span></h3>
+                            <span
+                                class="inline-block bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 text-sm mt-2 px-2 py-1 rounded"><i
+                                    class="far fa-calendar-alt mr-1"></i> 01/2022 até 02/2024</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mt-4 text-slate-600 dark:text-slate-400">
+                        <li class="flex items-start"><i
+                                class="fas fa-laptop-code text-primary mt-1 mr-3"></i><span><strong
+                                    class="text-slate-800 dark:text-slate-200">Desenvolvimento Fullstack:</strong>
+                                Manutenção avançada e inclusão ágil em plataformas corporativas de vídeo utilizando
+                                Symfony, Java e Javascript.</span></li>
+                        <li class="flex items-start"><i class="fas fa-building text-primary mt-1 mr-3"></i><span><strong
+                                    class="text-slate-800 dark:text-slate-200">Clientes:</strong> Operação direta
+                                para sustentar o sistema principal "Samba Vídeos" e projetos gigantes como B3, Grupo
+                                Petrópolis e Porto Seguro.</span></li>
+                        <li class="flex items-start"><i class="fas fa-cloud text-primary mt-1 mr-3"></i><span><strong
+                                    class="text-slate-800 dark:text-slate-200">Infra / Cloud:</strong> Atuação profunda
+                                em infraestrutura orquestrando containers com Docker em nuvem AWS.</span></li>
+                        <li class="flex items-start"><i class="fas fa-tasks text-primary mt-1 mr-3"></i><span><strong
+                                    class="text-slate-800 dark:text-slate-200">Product Sense:</strong> Abertura de cards
+                                técnicos, análise funcional e de requisitos dialogando diretamente ao lado do cliente
+                                usando Jira, Miro e Monday.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Exp 4 -->
+                <div
+                    class="bg-white dark:bg-darkcard rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 hover:-translate-y-1 transition-transform">
+                    <div class="sm:flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">TWT INFO <span
+                                    class="text-primary font-medium ml-2">- Desenvolvedora Web</span></h3>
+                            <span
+                                class="inline-block bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 text-sm mt-2 px-2 py-1 rounded"><i
+                                    class="far fa-calendar-alt mr-1"></i> 03/2021 até 01/2022</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mt-2">Desenvolvimento e manutenção de funcionalidades
+                        em software jurídico utilizando Laravel, JavaScript e React; Identificação e correção de erros,
+                        realizando registro e documentação das tarefas no Trello; Colaboração em equipe e aplicação de
+                        SCRUM como metodologia ágil.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades Técnicas -->
+        <section id="habilidades" class="py-12 fade-in">
+            <h2
+                class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-gray-200 dark:border-slate-700 pb-2 mb-8 inline-block">
+                <i class="fas fa-laptop-code text-primary mr-2"></i> Habilidades Técnicas
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+
+                <div
+                    class="bg-white dark:bg-darkcard rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 hover:-translate-y-1 transition-transform">
+                    <i class="fas fa-boxes text-4xl text-primary mb-4 opacity-80"></i>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Ferramentas</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span
+                            class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm px-3 py-1 rounded-full">Jira</span>
+                        <span
+                            class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm px-3 py-1 rounded-full">Miro</span>
+                        <span
+                            class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm px-3 py-1 rounded-full">Monday</span>
+                        <span
+                            class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm px-3 py-1 rounded-full">Trello</span>
+                        <span
+                            class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm px-3 py-1 rounded-full">Figma</span>
+                        <span
+                            class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm px-3 py-1 rounded-full">PowerBI</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-darkcard rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 hover:-translate-y-1 transition-transform">
+                    <i class="fas fa-code text-4xl text-primary mb-4 opacity-80"></i>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Desenvolvimento</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span
+                            class="bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300 text-sm px-3 py-1 rounded-full">HTML/CSS</span>
+                        <span
+                            class="bg-yellow-100 text-yellow-800 dark:bg-yellow-900/40 dark:text-yellow-300 text-sm px-3 py-1 rounded-full">JavaScript</span>
+                        <span
+                            class="bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300 text-sm px-3 py-1 rounded-full">Laravel/PHP</span>
+                        <span
+                            class="bg-cyan-100 text-cyan-800 dark:bg-cyan-900/40 dark:text-cyan-300 text-sm px-3 py-1 rounded-full">Java</span>
+                        <span
+                            class="bg-slate-800 text-white dark:bg-slate-700 dark:text-slate-300 text-sm px-3 py-1 rounded-full">Git</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-darkcard rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 hover:-translate-y-1 transition-transform">
+                    <i class="fas fa-database text-4xl text-primary mb-4 opacity-80"></i>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Banco de Dados</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span
+                            class="bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300 text-sm px-3 py-1 rounded-full">SQL</span>
+                        <span
+                            class="bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300 text-sm px-3 py-1 rounded-full">MySQL</span>
+                        <span
+                            class="bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300 text-sm px-3 py-1 rounded-full">SQL
+                            Server</span>
+                        <span
+                            class="bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300 text-sm px-3 py-1 rounded-full">PostgreSQL</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tailwind Modals Block -->
+
+        <!-- Modal TUV -->
+        <div id="tuvModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+            <div
+                class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity opacity-0 duration-300 modal-overlay cursor-pointer">
+            </div>
+            <div
+                class="bg-white dark:bg-darkcard rounded-2xl shadow-2xl z-10 max-w-lg w-full scale-95 transition-transform duration-300 p-6 relative modal-box">
+                <button
+                    class="modal-close absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-500 dark:text-gray-300 transition-colors cursor-pointer"><i
+                        class="fas fa-times"></i></button>
+                <div class="flex items-center mb-4 border-b border-gray-100 dark:border-slate-700 pb-4">
+                    <div class="bg-blue-100 text-blue-600 dark:bg-blue-900/50 dark:text-blue-400 p-2 rounded-lg mr-3"><i
+                            class="fas fa-shield-alt text-xl"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">TÜV Rheinland</h3>
+                </div>
+                <div class="text-slate-600 dark:text-slate-300 space-y-3 leading-relaxed text-sm text-justify">
+                    <p>A <strong class="text-slate-800 dark:text-slate-100">TÜV Rheinland</strong> é líder global em
+                        serviços técnicos, segurança e certificação, com mais de 150 anos de atuação, atuando de forma
+                        independente na validação de produtos, sistemas e processos.</p>
+                    <p><strong class="text-slate-800 dark:text-slate-100">Meu papel:</strong> Atuei na condução completa
+                        do projeto, desde o levantamento detalhado de requisitos com o cliente até a entrega final da
+                        solução. Fui responsável pela priorização do backlog, organização do escopo técnico e gestão de
+                        equipe.
+                        Implementei adaptações na metodologia Scrum para aumentar a produtividade e garantir
+                        alinhamentos eficientes entre todas as frentes envolvidas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Regula -->
+        <div id="regulaBtModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+            <div
+                class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity opacity-0 duration-300 modal-overlay cursor-pointer">
+            </div>
+            <div
+                class="bg-white dark:bg-darkcard rounded-2xl shadow-2xl z-10 max-w-lg w-full scale-95 transition-transform duration-300 p-6 relative modal-box">
+                <button
+                    class="modal-close absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-500 dark:text-gray-300 transition-colors cursor-pointer"><i
+                        class="fas fa-times"></i></button>
+                <div class="flex items-center mb-4 border-b border-gray-100 dark:border-slate-700 pb-4">
+                    <div class="bg-cyan-100 text-cyan-600 dark:bg-cyan-900/50 dark:text-cyan-400 p-2 rounded-lg mr-3"><i
+                            class="fas fa-robot text-xl"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">RegulaBT (BTLAW)</h3>
+                </div>
+                <div class="text-slate-600 dark:text-slate-300 space-y-3 leading-relaxed text-sm text-justify">
+                    <p>Neste projeto estratégico e de grande escopo da <strong>BTLAW</strong>, o time construiu uma nova
+                        versão corporativa da plataforma pré-existente visando elevá-la, tornando-a consideravelmente
+                        mais estruturada em performance, e aderindo massivas funcionalidades analíticas e nativas na
+                        nuvem.</p>
+                    <p><strong class="text-slate-800 dark:text-slate-100">Meu papel:</strong> Atuei diretamente
+                        com o cliente e com a equipe na condução do projeto durante todo o processo de reconstrução da
+                        plataforma.
+                        Um dos principais desafios foi a adoção intensiva de Inteligência Artificial no desenvolvimento.
+                        Meu papel foi garantir que o uso da IA não comprometesse a arquitetura, a qualidade e a
+                        sustentabilidade do projeto, além de estimular o crescimento técnico da equipe diante dessa nova
+                        abordagem.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Estaff -->
+        <div id="estaffModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+            <div
+                class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity opacity-0 duration-300 modal-overlay cursor-pointer">
+            </div>
+            <div
+                class="bg-white dark:bg-darkcard rounded-2xl shadow-2xl z-10 max-w-lg w-full scale-95 transition-transform duration-300 p-6 relative modal-box">
+                <button
+                    class="modal-close absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-500 dark:text-gray-300 transition-colors cursor-pointer"><i
+                        class="fas fa-times"></i></button>
+                <div class="flex items-center mb-4 border-b border-gray-100 dark:border-slate-700 pb-4">
+                    <div
+                        class="bg-amber-100 text-amber-600 dark:bg-amber-900/50 dark:text-amber-400 p-2 rounded-lg mr-3">
+                        <i class="fas fa-wallet text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Estaff & Celcoin</h3>
+                </div>
+                <div class="text-slate-600 dark:text-slate-300 space-y-3 leading-relaxed text-sm text-justify">
+                    <p>Projeto de integração entre o aplicativo <strong>Estaff</strong> e a
+                        <strong>Celcoin</strong>, permitindo a
+                        unificação de
+                        funcionalidades financeiras como controle de saldo, recargas e gestão de carteira digital
+                        diretamente no app.
+                    </p>
+                    <p><strong class="text-slate-800 dark:text-slate-100">Meu papel:</strong> Atuei proativamente como
+                        <em>Gestora de Projetos</em>. Como premissa do rigor em manusear integração de serviços
+                        bancários complexos sujeitos a regulação do bacen e regras contábeis, a prioridade master foi
+                        estruturar preventivamente todo o mapeamento crítico de riscos, blindando impecavelmente a regra
+                        de negócio do cliente de eventuais violações de segurança nas transaturas dos usuários com a
+                        carteira virtual, sem comprometer prazos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Exercite -->
+        <div id="exerciteModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+            <div
+                class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity opacity-0 duration-300 modal-overlay cursor-pointer">
+            </div>
+            <div
+                class="bg-white dark:bg-darkcard rounded-2xl shadow-2xl z-10 max-w-lg w-full scale-95 transition-transform duration-300 p-6 relative modal-box">
+                <button
+                    class="modal-close absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-500 dark:text-gray-300 transition-colors cursor-pointer"><i
+                        class="fas fa-times"></i></button>
+                <div class="flex items-center mb-4 border-b border-gray-100 dark:border-slate-700 pb-4">
+                    <div
+                        class="bg-emerald-100 text-emerald-600 dark:bg-emerald-900/50 dark:text-emerald-400 p-2 rounded-lg mr-3">
+                        <i class="fas fa-heart-pulse text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Exercite-se Solidário</h3>
+                </div>
+                <div class="text-slate-600 dark:text-slate-300 space-y-3 leading-relaxed text-sm text-justify">
+                    <p>Eventos fomentam grande união humanitária quando possuem propósito de base comunitária. Promovida
+                        via Comp Júnior, a prova de rua esportiva beneficente <strong>Exercite-se Solidário</strong>
+                        teve a incrível missão de engajar a saúde física com a solidariedade, instigando o movimento de
+                        captar doações por volta de todo o ecossistema e ambiente universitário e
+                        populacional de Lavras.</p>
+                    <p><strong class="text-slate-800 dark:text-slate-100">Meu papel:</strong> Atuei na estruturação
+                        completa do evento, desde o planejamento logístico até a execução. Fui responsável por organizar
+                        recursos, alinhar equipes e garantir a entrega do evento dentro das limitações de orçamento,
+                        promovendo alto engajamento e impacto social.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal CompWeek -->
+        <div id="compWeekModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+            <div
+                class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity opacity-0 duration-300 modal-overlay cursor-pointer">
+            </div>
+            <div
+                class="bg-white dark:bg-darkcard rounded-2xl shadow-2xl z-10 max-w-lg w-full scale-95 transition-transform duration-300 p-6 relative modal-box">
+                <button
+                    class="modal-close absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-500 dark:text-gray-300 transition-colors cursor-pointer"><i
+                        class="fas fa-times"></i></button>
+                <div class="flex items-center mb-4 border-b border-gray-100 dark:border-slate-700 pb-4">
+                    <div class="bg-rose-100 text-rose-600 dark:bg-rose-900/50 dark:text-rose-400 p-2 rounded-lg mr-3"><i
+                            class="fas fa-microphone text-xl"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">CompWeek 2024</h3>
+                </div>
+                <div class="text-slate-600 dark:text-slate-300 space-y-3 leading-relaxed text-sm text-justify">
+                    <p>A <strong>CompWeek</strong> é um evento de grande visibilidade que desenvolve e capacita
+                        talentos. Conecta
+                        estudantes, empresas e profissionais do mercado por meio de palestras, workshops e networking.
+                    </p>
+                    <p><strong class="text-slate-800 dark:text-slate-100">Meu papel:</strong> Fui responsável pelo
+                        contato direto com palestrantes e empresas parceiras, conduzindo o relacionamento antes, durante
+                        e após o evento.
+                        Atuei garantindo alinhamento entre todas as partes envolvidas, organização da agenda e
+                        acompanhamento contínuo para assegurar a qualidade da experiência e o sucesso do evento.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="contato" class="bg-slate-900 dark:bg-black text-slate-300 py-12 mt-12 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-white mb-8">Contato</h3>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mb-12">
+                <div class="flex flex-col items-center hover:-translate-y-1 transition-transform">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3"></i>
+                    <p class="text-lg">Lavras - MG</p>
+                </div>
+                <div class="flex flex-col items-center hover:-translate-y-1 transition-transform">
+                    <i class="fas fa-envelope text-3xl text-primary mb-3"></i>
+                    <a href="mailto:luizagarcia.osg@gmail.com"
+                        class="hover:text-white transition-colors text-lg">luizagarcia.osg@gmail.com</a>
+                </div>
+                <div class="flex flex-col items-center hover:-translate-y-1 transition-transform">
+                    <i class="fas fa-phone-alt text-3xl text-primary mb-3"></i>
+                    <p class="text-lg">(35) 99117-8804</p>
+                </div>
+                <div class="flex flex-col items-center hover:-translate-y-1 transition-transform">
+                    <i class="fab fa-linkedin text-3xl text-primary mb-3"></i>
+                    <a href="https://linkedin.com/in/luizaosg" target="_blank"
+                        class="hover:text-white transition-colors text-lg">/in/luizaosg</a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-sm">
+                <p>&copy; 2026 Luiza Garcia. Todos os direitos reservados. Projeto Acadêmico.</p>
+                <p class="mt-2 text-slate-500">Versão construída com <strong class="text-blue-400">Tailwind CSS</strong>
+                    e Vanilla JS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
